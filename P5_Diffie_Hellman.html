@@ -1,0 +1,127 @@
+ <!-- Implement the Diffie-Hellman Key Exchange mechanism using HTML and JavaScript. Consider the end user as one of the parties (Alice) and the JavaScript application as other party (bob) -->
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Diffie-Hellman Key Exchange</title>
+ </head>
+ <body>
+     <h2>Diffie-Hellman Key Exchange</h2>
+     <hr>
+     <p>Welcome, Alice! Below is the Diffie-Hellman Key Exchange simulation between you and Bob.</p>
+     <label for="privateKey">Enter your private key (Alice): </label>
+     <input type="number" id="privateKey" value="6"><br><br>
+     <button onclick="startExchange()">Start Key Exchange</button>
+     
+     <p id="result"></p>
+ 
+     <script>
+         // Function to calculate (a^b) % p
+         function power(a, b, p) {
+             return Math.pow(a, b) % p;
+         }
+ 
+         // Public parameters agreed upon by Alice and Bob
+         var P = 23;  // Prime number
+         var G = 9;   // Primitive root
+         var b = 15;  // Bob's private key (simulated)
+ 
+         // Bob's public key
+         var y = power(G, b, P);  // Bob's public key
+ 
+         function startExchange() {
+             // Get Alice's private key from the input
+             var a = parseInt(document.getElementById('privateKey').value);
+             
+             // Alice's public key
+             var x = power(G, a, P);
+ 
+             // Shared secret key calculations
+             var ka = power(y, a, P); // Alice's secret key
+             var kb = power(x, b, P); // Bob's secret key
+ 
+             // Displaying the results
+             document.getElementById("result").innerHTML = `
+                 <strong>Diffie-Hellman Key Exchange Details:</strong><br><br>
+                 Prime number P: ${P}<br>
+                 Primitive root G: ${G}<br><br>
+                 Alice's private key: ${a}<br>
+                 Alice's public key: ${x}<br><br>
+                 Bob's private key (simulated): ${b}<br>
+                 Bob's public key: ${y}<br><br>
+                 Alice's shared secret key: ${ka}<br>
+                 Bob's shared secret key: ${kb}<br><br>
+                 <strong>Shared Secret Key (should be the same): ${ka}</strong><br>
+                 (Both Alice and Bob computed the same secret key)
+             `;
+         }
+     </script>
+ </body>
+ </html>
+ 
+
+<!-- Question: What is the Diffie-Hellman key exchange? -->
+<!-- Answer: It is a cryptographic method allowing two parties to -->
+<!-- securely generate a shared secret over an insecure channel. -->
+
+<!-- Question: What are the public values in this example? -->
+<!-- Answer: P = 23 (a prime number), G = 9 (a primitive root of P). -->
+
+<!-- Question: Why is G called a primitive root? -->
+<!-- Answer: Because G generates all numbers from 1 to P-1 modulo P, -->
+<!-- which is required for Diffie-Hellman to work securely. -->
+
+<!-- Question: What is Alice's private key in this simulation? -->
+<!-- Answer: It is the value entered by the user in the input field. -->
+
+<!-- Question: What is Bob's private key here? -->
+<!-- Answer: It's simulated with a fixed value of b = 15 in JavaScript. -->
+
+<!-- Question: How is the public key computed? -->
+<!-- Answer: Using the formula (G^private_key) mod P. -->
+
+<!-- Question: What is Alice's public key expression? -->
+<!-- Answer: x = (G^a) mod P, where a is Alice's private key. -->
+
+<!-- Question: What is Bob's public key expression? -->
+<!-- Answer: y = (G^b) mod P, where b is Bob's private key. -->
+
+<!-- Question: How is the shared secret computed by Alice? -->
+<!-- Answer: ka = (y^a) mod P, using Bob's public key and Alice's private key. -->
+
+<!-- Question: How is the shared secret computed by Bob? -->
+<!-- Answer: kb = (x^b) mod P, using Alice's public key and Bob's private key. -->
+
+<!-- Question: Should Alice and Bob get the same shared key? -->
+<!-- Answer: Yes, both sides compute the same shared key if all -->
+<!-- values are correct and operations are done modulo P. -->
+
+<!-- Question: Is Math.pow() accurate for cryptographic use? -->
+<!-- Answer: Not really. For security, use modular exponentiation -->
+<!-- with large integers and avoid floating-point Math.pow(). -->
+
+<!-- Question: Why is Diffie-Hellman secure? -->
+<!-- Answer: Because while public keys are shared, it's hard to find -->
+<!-- the private key (discrete logarithm problem) without brute force. -->
+
+<!-- Question: Is this implementation secure for real applications? -->
+<!-- Answer: No. It's a basic simulation. Real DH uses large primes -->
+<!-- and secure modular arithmetic libraries (e.g., BigInt or crypto). -->
+
+<!-- Question: What would happen if P is not prime? -->
+<!-- Answer: The security breaks, and G may not act as a proper -->
+<!-- generator, making the key exchange unreliable. -->
+
+<!-- Question: What can attackers observe in this exchange? -->
+<!-- Answer: Attackers see P, G, x, and y but cannot deduce the shared -->
+<!-- key without solving the discrete log problem. -->
+
+<!-- Question: Why do we simulate Bob instead of real input? -->
+<!-- Answer: For simplicity. In real cases, both parties enter -->
+<!-- private values and exchange computed public keys. -->
+
+<!-- Question: Can Diffie-Hellman be used alone for encryption? -->
+<!-- Answer: No. It's only for securely exchanging a shared secret, -->
+<!-- which is then used in symmetric encryption like AES. -->

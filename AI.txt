@@ -1,0 +1,123 @@
+Unit I: Introduction to Artificial Intelligence
+Mapped COs: CO1, CO4
+
+Q1. What is Artificial Intelligence (AI)?
+A: AI is the simulation of human intelligence in machines that are programmed to think and learn like humans. It includes learning, reasoning, problem-solving, and decision-making.
+
+Q2. What are the foundations of AI?
+A: The foundations include mathematics (logic, probability), neuroscience, computer engineering, psychology, philosophy, and linguistics.
+
+Q3. What is the history of AI?
+A: AI began in the 1950s with Alan Turing's work. The term was coined in 1956 at the Dartmouth Conference. It evolved through periods of excitement and AI winters to the current deep learning boom.
+
+Q4. What are the risks and benefits of AI?
+A: Benefits include automation, healthcare improvements, and better decision-making. Risks involve job loss, privacy concerns, bias in algorithms, and the potential for autonomous weapons.
+
+Q5. What is an intelligent agent?
+A: An intelligent agent perceives its environment through sensors and acts upon that environment using actuators to achieve goals.
+
+Q6. What is rational behavior in AI?
+A: Rational behavior means acting to achieve the best outcome or the most expected utility, based on the agent’s knowledge.
+
+Q7. Case Study: How is Kroger using AI and robots?
+A: Kroger uses AI-driven robots for warehouse automation, demand forecasting, and personalized shopping experiences as part of the 4th Industrial Revolution.
+
+Unit II: Problem Solving
+Mapped COs: CO2, CO4
+
+Q1. What is a problem-solving agent?
+A: A problem-solving agent decides what action to take by searching through possible sequences of actions that lead to the goal.
+
+Q2. What is the difference between informed and uninformed search?
+A: Uninformed search has no information about the goal location (e.g., BFS, DFS), whereas informed search uses heuristics (e.g., A*, Greedy).
+
+Q3. Explain Breadth-First Search (BFS).
+A: BFS explores all nodes at the current depth before moving to the next level. It is complete and optimal for uniform cost.
+
+Q4. What is the A algorithm?*
+A: A* uses the formula f(n) = g(n) + h(n), where g(n) is the cost so far and h(n) is the estimated cost to the goal. It is both complete and optimal if h is admissible.
+
+Q5. What are local search strategies?
+A: These include Hill Climbing, Simulated Annealing, and Genetic Algorithms. They operate on single states and use iterative improvements.
+
+Q6. Case Study: How is AI shaping the 4th Industrial Revolution?
+A: AI, Big Data, and Robotics are transforming industries by enabling automation, predictive analytics, and smart manufacturing.
+
+Unit III: Adversarial Search and Games
+Mapped COs: CO3, CO4
+
+Q1. What is adversarial search?
+A: It's used in games where agents compete (e.g., chess). It models opponent actions to maximize the agent's performance.
+
+Q2. Explain the Minimax algorithm.
+A: Minimax selects the move that minimizes the possible loss for a worst-case scenario. It's used in deterministic, perfect information games.
+
+Q3. What is Alpha–Beta pruning?
+A: It reduces the number of nodes evaluated in minimax by pruning branches that won't affect the final decision.
+
+Q4. What is Monte Carlo Tree Search (MCTS)?
+A: MCTS uses randomness and simulations to decide the next best move, commonly used in games like Go.
+
+Q5. What is a Constraint Satisfaction Problem (CSP)?
+A: A CSP is a problem where variables must be assigned values that satisfy specific constraints (e.g., Sudoku, timetabling).
+
+Q6. Case Study: How is Google using AI for sustainability?
+A: Google uses AI for energy efficiency in data centers, renewable energy predictions, and environmental protection efforts.
+
+Unit IV: Knowledge
+Mapped COs: CO3, CO4
+
+Q1. What is a knowledge-based agent?
+A: It can represent and reason about the world to make decisions. It uses a knowledge base to derive new facts.
+
+Q2. What is propositional logic?
+A: A form of logic where statements are either true or false. It uses logical connectives like AND, OR, NOT.
+
+Q3. What is First-Order Logic (FOL)?
+A: FOL extends propositional logic with quantifiers and predicates, allowing more expressive statements about objects and their relationships.
+
+Q4. What is model checking?
+A: A method to verify the correctness of systems by checking whether a model satisfies a given specification.
+
+Q5. Case Study: How is BBC using AI for radio?
+A: BBC created an AI-enabled interactive radio show compatible with Amazon Echo and Google Home, offering conversational experiences.
+
+Unit V: Reasoning
+Mapped COs: CO4, CO5
+
+Q1. What is inference in AI?
+A: It is the process of deriving new knowledge from known facts using logical rules.
+
+Q2. What is unification in FOL?
+A: Unification makes different logical expressions identical by finding a common substitution of variables.
+
+Q3. Explain forward and backward chaining.
+A: Forward chaining starts from known facts to reach a goal. Backward chaining starts from a goal and works backward to find supporting facts.
+
+Q4. What is resolution?
+A: A rule of inference used in logic-based systems to derive conclusions by refuting contradictions.
+
+Q5. Case Study: How does Wikipedia use AI?
+A: Wikipedia uses AI to detect vandalism, suggest article edits, and recommend content improvements using NLP and ML.
+
+Unit VI: Planning
+Mapped COs: CO4, CO5
+
+Q1. What is classical planning?
+A: Planning where the agent assumes complete knowledge of the environment and deterministic actions to reach a goal.
+
+Q2. What are heuristics in planning?
+A: Heuristics are estimates used to guide planning algorithms toward the goal efficiently.
+
+Q3. What is hierarchical planning?
+A: It breaks down a high-level task into smaller sub-tasks, simplifying complex planning.
+
+Q4. What is nondeterministic planning?
+A: Planning under uncertainty where actions may have multiple possible outcomes.
+
+Q5. What are the ethics of AI?
+A: It involves fairness, accountability, transparency, privacy, and avoiding harm through responsible AI deployment.
+
+Q6. Case Study: What is the role of AI architectures in future systems?
+A: AI architectures define how components like perception, reasoning, learning, and action work together in intelligent systems.
+

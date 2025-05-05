@@ -1,0 +1,124 @@
+Unit I: Introduction to Information Security
+Mapped CO: CO1
+
+Q1. What does CIA stand for in Information Security?
+A: Confidentiality, Integrity, and Availability.
+
+Q2. What is an attack in security?
+A: An attempt to compromise the confidentiality, integrity, or availability of information.
+
+Q3. What are security mechanisms?
+A: Techniques like encryption, hashing, and access control to protect information.
+
+Q4. What is the OSI Security Architecture?
+A: A framework that applies security mechanisms at different layers of the OSI model.
+
+Q5. What is the goal of a security service?
+A: To protect the confidentiality, integrity, and availability of data.
+
+Unit II: Symmetric Key Cryptography
+Mapped CO: CO2
+
+Q1. What is a stream cipher?
+A: A cipher that encrypts data bit by bit.
+
+Q2. How does a Caesar Cipher work?
+A: It shifts each letter of the plaintext by a fixed number.
+
+Q3. What is AES?
+A: Advanced Encryption Standard, a symmetric block cipher.
+
+Q4. What is the Hill Cipher?
+A: A cipher that encrypts data using matrix multiplication.
+
+Q5. What is 3DES?
+A: Triple DES, an enhancement of DES by applying it three times.
+
+Unit III: Asymmetric Key Cryptography
+Mapped CO: CO2
+
+Q1. What is RSA?
+A: A public-key encryption algorithm based on prime factorization.
+
+Q2. What is Diffie-Hellman used for?
+A: Key exchange over an insecure channel.
+
+Q3. What is the ElGamal algorithm?
+A: A public-key encryption scheme based on Diffie-Hellman.
+
+Q4. What is ECC?
+A: Elliptic Curve Cryptography, offering security with smaller key sizes.
+
+Q5. What is the Chinese Remainder Theorem?
+A: A method to solve systems of congruences in modular arithmetic.
+
+Unit IV: Cryptographic Hash Functions & Web Security
+Mapped CO: CO3
+
+Q1. What is a hash function?
+A: A function that converts input into a fixed-size string of characters.
+
+Q2. What is SHA-256 used for?
+A: It is a cryptographic hash function used for data integrity.
+
+Q3. What is a MAC (Message Authentication Code)?
+A: A code used to verify both the integrity and authenticity of a message.
+
+Q4. What does HTTPS stand for?
+A: Hypertext Transfer Protocol Secure.
+
+Q5. What is a digital signature?
+A: A cryptographic mechanism to verify the authenticity and integrity of a message.
+
+Unit V: Network and System Security
+Mapped CO: CO4
+
+Q1. What is a firewall?
+A: A network security system that monitors and controls incoming and outgoing traffic.
+
+Q2. What is DoS (Denial of Service) attack?
+A: An attack aimed at disrupting the availability of a service.
+
+Q3. What is IDS (Intrusion Detection System)?
+A: A system that detects and alerts on suspicious network activity.
+
+Q4. What is an intrusion prevention system (IPS)?
+A: A system that not only detects but also prevents malicious activity.
+
+Q5. What is multi-level security (MLS)?
+A: A system where access to resources is based on security labels or classifications.
+
+Unit VI: Cybercrime and Legal Aspects
+Mapped CO: CO5
+
+Q1. What is phishing?
+A: A fraudulent attempt to obtain sensitive information by pretending to be a trustworthy entity.
+
+Q2. What is cyberstalking?
+A: The use of the internet to harass or stalk an individual.
+
+Q3. What is social engineering?
+A: Manipulating individuals into revealing confidential information.
+
+Q4. What is the Indian IT Act?
+A: The Information Technology Act of India, which governs cybercrimes and e-commerce.
+
+Q5. What is cybercrime?
+A: A crime that involves computers and networks, such as hacking or fraud.
+
+Algorithms
+Q1. How does the RSA algorithm work?
+A: It uses public and private keys for encryption and decryption, based on large prime factorization.
+
+Q2. What is the Row-Column Transposition Cipher?
+A: A cipher where the message is written in rows and then read column by column.
+
+Q3. How does DES encrypt data?
+A: DES applies 16 rounds of permutations, substitutions, and key mixing on 64-bit blocks.
+
+Q4. What is Diffie-Hellman key exchange?
+A: It enables two parties to securely exchange cryptographic keys over an insecure channel.
+
+Q5. What is the Caesar Cipher shift used for?
+A: It shifts letters of the plaintext by a fixed number, a basic form of substitution cipher.
+
